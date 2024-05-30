@@ -14,7 +14,6 @@
         public int NumeroLados { get { return numeroLados; } set {  numeroLados = value; } }
         public double LongitudBase { get {  return longitudBase; } set {  longitudBase = value; } }
 
-
         public override string ToString()
         {
             return $"Numero de lados: {numeroLados} y Longitud Base {longitudBase}";

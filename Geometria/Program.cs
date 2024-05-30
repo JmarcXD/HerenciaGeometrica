@@ -1,8 +1,6 @@
 ﻿using Geometria.Poligonos;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Net.Http.Headers;
 
 namespace Geometria
 {
@@ -34,37 +32,39 @@ namespace Geometria
             //Console.WriteLine($"Elipse P = {elipse.Perimetro()} y A = {elipse.Area()} ({elipse})");
 
 
-            List<Figura> figuras = new List<Figura>();
+
+            List<Figura> listaFigurasDiagrama = new List<Figura>();
 
             Random rnd = new Random();
 
             int numeroFiguras = rnd.Next(25);
 
+            // Genero las figuras
             for (int i = 0; i < numeroFiguras; i++)
             {
-                int figura = rnd.Next(7);
+                int figura = rnd.Next(1,5); // Numero aleatorio del 1 al 4
 
                 switch (figura)
                 {
                     case 1:
-                        figuras.Add(new Rectangulo("Rectangulo", rnd.Next(25), rnd.Next(100)));
+                        listaFigurasDiagrama.Add(new Rectangulo("Rectangulo", rnd.Next(25), rnd.Next(100)));
                         break;
                     case 2:
-                        figuras.Add(new Triangulo("Triangulo", rnd.Next(25), rnd.Next(25)));
+                        listaFigurasDiagrama.Add(new Triangulo("Triangulo", rnd.Next(25), rnd.Next(25)));
                         break;
                     case 3:
-                        figuras.Add(new Rombo("Rombo", rnd.Next(5), rnd.Next(10), rnd.Next(20)));
+                        listaFigurasDiagrama.Add(new Rombo("Rombo", rnd.Next(5), rnd.Next(10), rnd.Next(20)));
                         break;
                     case 4:
-                        figuras.Add(new Elipse("Elipse", rnd.Next(3), rnd.Next(5)));
+                        listaFigurasDiagrama.Add(new Elipse("Elipse", rnd.Next(3), rnd.Next(5)));
                         break;
                 }
             }
 
-            Diagrama diagrama = new Diagrama(figuras);
+            Diagrama diagrama = new Diagrama(listaFigurasDiagrama);
 
-            Console.WriteLine($"Perimetro Total diagrama {diagrama.PerimetroTotal()}");
-            Console.WriteLine($"Area Total diagrama {diagrama.AreaTotal()}");
+            Console.WriteLine($"Perimetro Total diagrama:  {diagrama.PerimetroTotal()}");
+            Console.WriteLine($"Area Total diagrama:       {diagrama.AreaTotal()}");
 
             Console.ReadKey();
         }

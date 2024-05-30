@@ -43,16 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circulo\Elipse.cs" />
-    <Compile Include="Circulo\Circunferencia.cs" />
+    <Compile Include="Figuras\Elipse.cs" />
+    <Compile Include="Figuras\Circunferencia.cs" />
     <Compile Include="Diagrama.cs" />
-    <Compile Include="Padre\Figura.cs" />
-    <Compile Include="Poligonos\Cuadrado.cs" />
-    <Compile Include="Poligonos\QuaUltraGono.cs" />
-    <Compile Include="Padre\Poligono.cs" />
-    <Compile Include="Poligonos\Rectangulo.cs" />
-    <Compile Include="Poligonos\Rombo.cs" />
-    <Compile Include="Poligonos\Triangulo.cs" />
+    <Compile Include="Figura.cs" />
+    <Compile Include="Figuras\Cuadrado.cs" />
+    <Compile Include="Figuras\QuaUltraGono.cs" />
+    <Compile Include="Poligono.cs" />
+    <Compile Include="Figuras\Rectangulo.cs" />
+    <Compile Include="Figuras\Rombo.cs" />
+    <Compile Include="Figuras\Triangulo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
