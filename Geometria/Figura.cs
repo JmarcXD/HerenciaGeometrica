@@ -4,12 +4,12 @@
     {
         private string nombre;
 
+        public string Nombre { get { return nombre; } set { this.nombre = value; } }
+
         public Figura(string nombre)
         {
             this.nombre = nombre;
         }
-
-        public string Nombre { get { return nombre; } set { this.nombre = value; } }
 
         public abstract double Perimetro();
         public abstract double Area();

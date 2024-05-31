@@ -7,12 +7,11 @@ namespace Geometria
     {
         private List<Figura> listaFiguras = new List<Figura>();
 
+        public List<Figura> ListaFiguras { get { return listaFiguras; } set { listaFiguras = value; } }
         public Diagrama(List<Figura> listaFiguras) 
         { 
             this.listaFiguras = listaFiguras;
         }
-
-        public List<Figura> ListaFiguras { get {  return listaFiguras; } set {  listaFiguras = value; } }
 
         public double PerimetroTotal()
         {

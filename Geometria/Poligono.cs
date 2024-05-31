@@ -5,14 +5,14 @@
         private int numeroLados;
         private double longitudBase;
 
+        public int NumeroLados { get { return numeroLados; } set { numeroLados = value; } }
+        public double LongitudBase { get { return longitudBase; } set { longitudBase = value; } }
+
         public Poligono(string nombre, int numeroLados, double longitudBase) : base(nombre)
         {
             this.numeroLados = numeroLados;
             this.longitudBase=longitudBase;
         }
-
-        public int NumeroLados { get { return numeroLados; } set {  numeroLados = value; } }
-        public double LongitudBase { get {  return longitudBase; } set {  longitudBase = value; } }
 
         public override string ToString()
         {

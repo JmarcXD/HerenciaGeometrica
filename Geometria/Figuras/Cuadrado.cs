@@ -2,7 +2,7 @@
 {
     public class Cuadrado : Rectangulo
     {
-        public Cuadrado(string nombre, double longitudBase) : base(nombre, longitudBase, longitudBase) { }
+        public Cuadrado(double longitudBase) : base("Cuadrado", longitudBase, longitudBase) { }
 
         public override string ToString()
         {

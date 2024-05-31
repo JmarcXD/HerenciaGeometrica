@@ -42,21 +42,21 @@ namespace Geometria
             // Genero las figuras
             for (int i = 0; i < numeroFiguras; i++)
             {
-                int figura = rnd.Next(1,5); // Numero aleatorio del 1 al 4
+                int figura = rnd.Next(5); // Numero aleatorio del 0 al 4
 
-                switch (figura)
+                switch ((eFiguras)figura)
                 {
-                    case 1:
-                        listaFigurasDiagrama.Add(new Rectangulo("Rectangulo", rnd.Next(25), rnd.Next(100)));
+                    case eFiguras.Rectangulo:
+                        listaFigurasDiagrama.Add(new Rectangulo(rnd.Next(25), rnd.Next(100)));
                         break;
-                    case 2:
-                        listaFigurasDiagrama.Add(new Triangulo("Triangulo", rnd.Next(25), rnd.Next(25)));
+                    case eFiguras.Triangulo:
+                        listaFigurasDiagrama.Add(new Triangulo(rnd.Next(25), rnd.Next(25), rnd.Next(25), rnd.Next(25)));
                         break;
-                    case 3:
-                        listaFigurasDiagrama.Add(new Rombo("Rombo", rnd.Next(5), rnd.Next(10), rnd.Next(20)));
+                    case eFiguras.Rombo:
+                        listaFigurasDiagrama.Add(new Rombo(rnd.Next(5), rnd.Next(10)));
                         break;
-                    case 4:
-                        listaFigurasDiagrama.Add(new Elipse("Elipse", rnd.Next(3), rnd.Next(5)));
+                    case eFiguras.Elipse:
+                        listaFigurasDiagrama.Add(new Elipse(rnd.Next(3), rnd.Next(5)));
                         break;
                 }
             }

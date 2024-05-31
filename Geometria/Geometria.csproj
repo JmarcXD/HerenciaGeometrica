@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\eFiguras.cs" />
     <Compile Include="Figuras\Elipse.cs" />
     <Compile Include="Figuras\Circunferencia.cs" />
     <Compile Include="Diagrama.cs" />

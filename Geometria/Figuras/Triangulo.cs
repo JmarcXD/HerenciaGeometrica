@@ -3,12 +3,19 @@
     public class Triangulo : Poligono
     {
         private double longitudAltura;
-        public Triangulo(string nombre, double longitudAltura, double longitudBase) : base(nombre, 3, longitudBase)
+        private double longitudDerecho;
+        private double longitudIzquierdo;
+        public double LongitudAltura { get { return this.longitudAltura; } set { this.longitudAltura = value; } }
+        public double LongitudDerecho { get { return this.longitudDerecho; } set { this.longitudAltura = value; } }
+        public double LongitudIzquierdo { get { return this.longitudIzquierdo; } set { this.longitudIzquierdo = value; } }
+
+        public Triangulo(double longitudAltura, double longitudDerecho, double longitudIzquierdo, double longitudBase) : base("Triangulo", 3, longitudBase)
         {
             this.longitudAltura = longitudAltura;
+            this.longitudDerecho = longitudDerecho;
+            this.longitudIzquierdo = longitudIzquierdo;
         }
 
-        public double LongitudAltura { get { return this.longitudAltura; } set { this.longitudAltura = value; } }
 
         public override double Perimetro()
         {

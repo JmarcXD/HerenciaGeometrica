@@ -3,13 +3,13 @@
     public class QuaUltraGono : Poligono
     {
         private double apotema;
+        public double Apotema { get { return apotema; } set { apotema = value; } }
 
-        public QuaUltraGono(string nombre ,double apotema, int numeroLados, double longitudBase) : base(nombre,numeroLados, longitudBase)
+        public QuaUltraGono(string nombre, double apotema, int numeroLados, double longitudBase) : base(nombre, numeroLados, longitudBase)
         {
             this.apotema = apotema;
         }
 
-        public double Apotema { get {  return apotema; } set {  apotema = value; } }
 
         public override double Perimetro()
         {

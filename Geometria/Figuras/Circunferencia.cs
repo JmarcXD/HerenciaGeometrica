@@ -2,7 +2,7 @@
 {
     public class Circunferencia : Elipse
     {
-        public Circunferencia(string nombre, double radio) : base(nombre, radio, radio) { }
+        public Circunferencia(double radio) : base("Circunferencia", radio, radio) { }
 
         public override string ToString()
         {
